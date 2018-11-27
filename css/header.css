@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  background-image: url('../images/home/u151.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  height: 1.75rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -78,9 +78,7 @@
       overflow: hidden;
     }
 
-    .swp3>.swiper-wrapper>.swiper-slide {
-      height: 5.3rem;
-    }
+    
     .swp3{
       height: 27.62rem;
     }
@@ -173,6 +171,111 @@
         clickable: true,
       },
     });
+  </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+  <header>
+  </header>
+  <section>
+    <div class="banner">
+      <div class="swiper-container swp1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/home/u62.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/home/u65.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/home/u68.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="swiper-container1 swp2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href=""><img src="./images/home/u97_01.png" alt=""></a></div>
+          <div class="swiper-slide"><a href=""><img src="./images/home/u97_03.png" alt=""></a></div>
+          <div class="swiper-slide"><a href=""><img src="./images/home/u97_05.png" alt=""></a></div>
+          <div class="swiper-slide"><a href=""><img src="./images/home/u97_07.png" alt=""></a></div>
+          <div class="swiper-slide"><a href=""><img src="./images/home/u97_09.png" alt=""></a></div>
+          <div class="swiper-slide"><a href=""><img src="./images/home/u97_11.png" alt=""></a></div>
+        </div>
+      </div>
+      <img class="zzzc" src="./images/home/u124.jpg" alt="">
+    </div>
+    <div class="down">
+      <div class="swiper-container swp3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="height:5.4rem"><a href=""><img src="./images/home/u115_01.png" alt=""></a></div>
+          <div class="swiper-slide" style="height:5.4rem"><a href=""><img src="./images/home/u115_03.png" alt=""></a></div>
+          <div class="swiper-slide" style="height:5.4rem"><a href=""><img src="./images/home/u115_05.png" alt=""></a></div>
+          <div class="swiper-slide" style="height:5.4rem"><a href=""><img src="./images/home/u115_07.png" alt=""></a></div>
+          <div class="swiper-slide" style="height:5.4rem"><a href=""><img src="./images/home/u115_09.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href=""><img src="./images/home/icon__zhan_u138.png" alt=""></a>
+    <a href=""><img src="./images/home/icon__tui_u132.png" alt=""></a>
+    <a href=""><img src="./images/home/icon__fa_u134.png" alt=""></a>
+    <a href=""><img src="./images/home/icon__ge_u136.png" alt=""></a>
+  </footer>
+  <script src="./js/rem.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swp1', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: true,
+      loop: true
+    })
+    var swiper2 = new Swiper('.swp2', {
+      slidesPerView: 2.5,
+      spaceBetween: 4,
+      loop: true,
+      pagination: {
+        clickable: true,
+      },
+    })
+    var swiper3 = new Swiper('.swp3', {
+      slidesPerView: 5,
+      spaceBetween: 8,
+      pagination: {
+        clickable: true,
+      },
+      direction: "vertical",
+    })
+    
+    // window.onscroll = function () {
+    //   var main = document.querySelector('.main')
+    //   var a = document.documentElement.scrollTop
+    //   var swp = document.querySelector
+    //   console.log(a,main);
+    //   if (a >=187) {
+    //     main.style.position = 'fixed'
+    //     main.style.top = '1.6rem'
+    //     main.style.zIndex = '999'
+    //   }else if(a < 187){
+    //     main.style.position = ''
+    //     main.style.top = ''
+    //     main.style.zIndex = ''
+    //   }
+    // }
   </script>
 </body>
 
