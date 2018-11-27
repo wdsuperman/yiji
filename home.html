@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+    }
+
+    .swiper-container img {
+      width: 100%;
+      display: block;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 1;
+      width: 0.1rem;
+      height: 0.1rem;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: red;
+    }
+
+    .swiper-container1 {
+      margin-top: 0.15rem;
+    }
+
+    .huihua>img {
+      display: block;
+      width: 100%;
+      /* width: 4.47rem; */
+    }
+
+    .swp2 {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .swp3>.swiper-wrapper>.swiper-slide {
+      height: 5.3rem;
+    }
+    .swp3{
+      height: 27.62rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="./images/home/u151.jpg" alt="">
+  </header>
+  <section>
+    <div>
+      <div class="swiper-container swp1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/home/u62.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/home/u65.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/home/u68.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper-container1 swp2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u97_01.png" alt=""></a></div>
+          <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u97_03.png" alt=""></a></div>
+          <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u97_05.png" alt=""></a></div>
+          <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u97_07.png" alt=""></a></div>
+          <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u97_09.png" alt=""></a></div>
+          <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u97_11.png" alt=""></a></div>
+        </div>
+        <img class="zzzc" src="./images/home/u124.jpg" alt="">
+      </div>
+
+      <div>
+        <div class="swiper-container swp3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u115_01.png" alt=""></a></div>
+            <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u115_03.png" alt=""></a></div>
+            <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u115_05.png" alt=""></a></div>
+            <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u115_07.png" alt=""></a></div>
+            <div class="swiper-slide"><a class="huihua" href=""><img src="./images/home/u115_09.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <a href=""><img src="./images/home/icon__zhan_u138.png" alt=""></a>
+      <a href="./recommend.html"><img src="./images/home/icon__tui_u132.png" alt=""></a>
+      <a href="./recommend.html"><img src="./images/home/icon__fa_u134.png" alt=""></a>
+      <a href="./user.html"><img src="./images/home/icon__ge_u136.png" alt=""></a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+  <script>
+    ! function (n) {
+      var e = n.document,
+        t = e.documentElement,
+        i = 720,
+        d = i / 100,
+        o = "orientationchange" in n ? "orientationchange" : "resize",
+        a = function () {
+          var n = t.clientWidth || 320;
+          n > 720 && (n = 720);
+          t.style.fontSize = n / d + "px"
+        };
+      e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+    }(window);
+    var swiper = new Swiper('.swp1', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: true,
+      loop: true
+    })
+    var swiper2 = new Swiper('.swp2', {
+      slidesPerView: 2.5,
+      spaceBetween: 4,
+      loop: true,
+      pagination: {
+        clickable: true,
+      },
+    });
+    var swiper3 = new Swiper('.swp3', {
+      slidesPerView: 2.5,
+      spaceBetween: 8,
+      direction: "vertical",
+      pagination: {
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
