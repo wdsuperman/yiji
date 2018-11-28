@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-repeat: no-repeat;
+  width: 10.8rem;
+  height: 1.77rem;
+  background-position: center center;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('../images/device/u190_01.png');
+}
+header>div{
+  width: 1rem;
+  height: 1rem;
+  margin-left: 9.4rem;
+  margin-top: 0.6rem;
+  opacity: 0.5;
+}
+.bg{
+  margin-top: 1.77rem;
+  width: 10.8rem;
+  height: 15.98rem;
+  background-position: center center;
+  background-size: 100%;
+  background-image: url('../images/device/u190_02.png');
+}

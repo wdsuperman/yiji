@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
 </head>
+
 <body>
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -16,16 +23,65 @@
       <div class="swiper-slide"><img class="pic" src="./images/index/u5.jpg" alt=""></div>
       <div class="swiper-slide"><img class="pic" src="./images/index/u8.jpg" alt=""></div>
       <div class="swiper-slide"><img class="pic" src="./images/index/u10.jpg" alt=""></div>
-      <div class="swiper-slide"><a href="./home.html"></a><img class="pic" src="./images/index/u13.jpg" alt=""></a></div>
+      <div class="swiper-slide"><img class="pic" src="./images/index/u13.jpg" alt="">
+        <div class="inp">
+          <input class="input__field input__field--hoshi user" type="text" id="input-4" placeholder="QQ号" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+          <p class="zhanghao">账号不正确</p>
+        </div>
+        <div class="inp1">
+          <input class="input__field input__field--hoshi password" type="password" id="input-5" placeholder='密码' />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-5">
+          <p class="mima">密码不正确</p>
+        </div>
+        <a href="javascript:void(0);" class="denglu"></a>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+  <script src="js/classie.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
       },
     })
+    var qq;
+    var zh = false;
+    var mm = false;
+    document.querySelector('.user').onblur = function () {
+      qq = Number(this.value)
+      var re =/^\d{5,10}$/;
+      zh = re.test(qq)
+      if(!zh){
+        document.querySelector('.zhanghao').style.display = 'block'
+      }else{
+        document.querySelector('.zhanghao').style.display = 'none'
+      }
+    }
+    document.querySelector('.password').onblur = function () {
+      if(Number(this.value) == 123456){
+        document.querySelector('.mima').style.display = 'none'
+        mm = true
+      }else{
+        document.querySelector('.mima').style.display = 'block'
+        mm = false
+      }
+    }
+    document.querySelector('.denglu').onclick = function (e) {
+      
+      if(!zh){
+        document.querySelector('.zhanghao').style.display = 'block'
+      }
+      if(!mm){
+        document.querySelector('.mima').style.display = 'block'
+      }
+      if(zh && mm){
+        localStorage.setItem("qq",qq)
+        this.href = './home.html'
+      }
+    }
   </script>
 </body>
+
 </html>

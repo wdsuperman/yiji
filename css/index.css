@@ -49,3 +49,31 @@ body {
   background-image: url('../images/index/active.png');
   background-color: none;
 }
+.inp{
+  width: 15rem;
+  position: fixed;
+  top: 16rem;
+  overflow: hidden;
+}
+.inp1{
+  width: 15rem;
+  position: fixed;
+  top: 19.5rem;
+  overflow: hidden;
+}
+.zhanghao{
+  margin-left: 10rem;
+  display: none;
+}
+.mima{
+  margin-left: 10rem;
+  display: none;
+}
+.denglu{
+  width: 4rem;
+  height: 2rem;
+  position: fixed;
+  top: 24.5rem;
+  margin-left: -5rem;
+  display: block;
+}

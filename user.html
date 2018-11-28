@@ -11,7 +11,9 @@
 </head>
 <body>
   <section>
-    <div class="top pics"></div>
+    <div class="top pics">
+      <img class="touxiang" src="" alt="">
+    </div>
     <div class="yxyj pics"></div>
     <div class="zxwzzp">
       <div class="zx pics"></div>
@@ -33,5 +35,11 @@
     <a href="#"><img src="./images/home/gr.png" alt=""></a>
   </footer>
   <script src="./js/rem.js"></script>
+  <script>
+   var val = Number(localStorage.getItem("qq"))
+   var a =
+        `http://q2.qlogo.cn/headimg_dl?bs=${val}&dst_uin=${val}&dst_uin=${val}&;dst_uin=${val}&spec=100&url_enc=0&referer=bu_interface&term_type=PC`
+   document.querySelector('.touxiang').src = a
+  </script>
 </body>
 </html>

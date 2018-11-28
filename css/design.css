@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-repeat: no-repeat;
+  width: 10.8rem;
+  height: 1.77rem;
+  background-position: center center;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('../images/design/u181_01.png');
+}
+header>div{
+  width: 1rem;
+  height: 1rem;
+  margin-left: 9.4rem;
+  margin-top: 0.6rem;
+  opacity: 0.5;
+}
+.main1{
+  width: 10.8rem;
+  margin-top: 1.7rem;
+}
+.main1>div{
+  width: 10.8rem;
+}
+.main1>div>a{
+  width: 10.8rem;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.main1>div>a>img{
+  width: 10.8rem;
+  display: block;
+}
+.bg{
+  width: 10.8rem;
+  height: 10.59rem;
+  background-position: center center;
+  background-size: 100%;
+  margin-top: -0.08rem;
+  background-image: url('../images/design/u181_03.png');
+}

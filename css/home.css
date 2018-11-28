@@ -120,3 +120,27 @@ width: ;
   left: 0;
   z-index: 999;
 }
+.main1>div{
+  width: 10.8rem;
+}
+.main1>div>a{
+  width: 10.8rem;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.main1>div>a>img{
+  width: 10.8rem;
+  display: block;
+}
+.main2>div{
+  width: 10.8rem;
+}
+.main2>div>a{
+  width: 10.8rem;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.main2>div>a>img{
+  width: 10.8rem;
+  display: block;
+}
