@@ -1,0 +1,67 @@
+.pics{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+.top{
+  width: 10.8rem;
+  height: 7.98rem;
+  background-image: url('../images/user/u334_01.png');
+}
+.yxyj{
+  width: 10.8rem;
+  height: 1.29rem;
+  background-image: url('../images/user/u3341_02.png');
+}
+.zxwzzp{
+  display: flex;
+  width: 10.52rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.zx{
+  width: 3.35rem;
+  height: 2.16rem;
+  background-image: url('../images/user/u334_04.png');
+  box-shadow: 1px 1px 2px 1px #ccc;
+}
+.wz{
+  width: 3.35rem;
+  height: 2.16rem;
+  background-image: url('../images/user/u334_06.png');
+  box-shadow: 1px 1px 2px 1px #ccc;
+}
+.zp{
+  width: 3.35rem;
+  height: 2.16rem;
+  background-image: url('../images/user/u334_08.png');
+  box-shadow: 1px 1px 2px 1px #ccc;
+}
+.dy{
+  width: 10.8rem;
+  background-image: url('../images/user/u3342_13.png');
+  height: 0.72rem;
+}
+.yc{
+  width: 10.8rem;
+  background-image: url('../images/user/u334_13.png');
+  height: 0.86rem;
+}
+.down{
+  display: flex;
+  width: 10.52rem;
+  height: 4.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+}
+.down>div:nth-child(1){
+  width: 5.16rem;
+  height: 4.5rem;
+  background-image: url('../images/user/u334_16.png');
+}
+.down>div:nth-child(2){
+  width: 5.16rem;
+  height: 4.5rem;
+  background-image: url('../images/user/u334_18.png');
+}

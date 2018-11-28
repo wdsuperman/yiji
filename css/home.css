@@ -1,59 +1,3 @@
-/* *{
-  margin: 0;
-  padding: 0;
-}
-body{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-}
-header{
-  width: 100%;
-  flex-shrink: 0;
-}
-header>img{
-  width: 100%;
-  display: block;
-}
-section{
-  width: 100%;
-  overflow: auto;
-  flex-grow: 1;
-}
-section>div{
-  width: 100%;
-}
-footer{
-  flex-shrink: 0;
-  justify-content: space-between;
-}
-footer>div{
-  background-image: url('../images/home/u130.jpg');
-  width: 100%;
-  height: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-footer img{
-  width: 1.2rem;
-  display: block;
-}
-.zzzc{
-  width: 100%;
-  margin-top: 0.15rem;
-  display: block;
-}
-.swp3>.swiper-wrapper>.swiper-slide>a{
-  width: 100%;
-  height: 100%;
-}
-.swp3>.swiper-wrapper>.swiper-slide>a>img{
-  width: 100%;
-  height: 100%;
-  display: block;
-} */
 html,
 body {
   position: relative;
@@ -122,13 +66,13 @@ section{
   width: 10.8rem;
 }
 .swp3>.swiper-wrapper>.swiper-slide>a{
-width: 100%;
+width: ;
 }
 .swp2>.swiper-wrapper>.swiper-slide>a{
-  width: 100%;
+  width: ;
   }
 .swp3>.swiper-wrapper>.swiper-slide>a>img{
-  width: 100%;
+  width: ;
   display: block;
 }
 .swp3>.swiper-wrapper>.swiper-slide>{
@@ -136,4 +80,43 @@ width: 100%;
 }
 .main{
   background-color: #fff;
+}
+.down{
+  padding-bottom: 1.45rem;
+}
+.dw{
+  position: relative;
+}
+.dw>div{
+
+  position: absolute;
+  width: 5.4rem;
+  height: 1rem;
+  /* background-color: #fff; */
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.down>div{
+  display: flex;
+  width: 21.6rem;
+  transition: all 0.5s linear;
+}
+.down{
+  overflow: hidden;
+}
+.zzjj{
+  display: flex;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.dw>.le{
+
+  position: absolute;
+  width: 5.4rem;
+  height: 1rem;
+  /* background-color: #fff; */
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
