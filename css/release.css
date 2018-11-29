@@ -1,4 +1,6 @@
 section>img{
   width: 10.8rem;
-  height: 17.75rem;
+  height: 100vh;
+  display: block;
+  margin-bottom: 1.45rem;
 }
