@@ -69,11 +69,14 @@ body {
   margin-left: 10rem;
   display: none;
 }
-.denglu{
+.denglu,.log{
   width: 4rem;
   height: 2rem;
+  display: block;
+  color: #000;
+}
+.login{
+  display: flex;
   position: fixed;
   top: 24.5rem;
-  margin-left: -5rem;
-  display: block;
 }
