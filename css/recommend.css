@@ -43,24 +43,30 @@ section>div:nth-child(1){
 }
 .one{
   width: 10.8rem;
-  margin-top: 2.6rem;
-  margin-bottom: 1.15rem;
-  height: 17rem;
-  
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }
-.one>img{
+.one>a>img{
   width: 10.8rem;
 }
-.main{
+.one>a{
   width: 10.8rem;
+}
+.main{  
   display: flex;
-  /* overflow: hidden; */
+  overflow: scroll;
+  height: 19rem;
+  transition: all 0.5s linear;
 }
 .two{
   width: 10.8rem;
-  margin-top: 2.6rem;
-  margin-bottom: 1.15rem;
+  overflow: scroll;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
-.two>img{
+.two>a>img{
+  width: 10.8rem;
+}
+.two>::after{
   width: 10.8rem;
 }

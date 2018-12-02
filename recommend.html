@@ -26,15 +26,16 @@
     </div>
     <div class="main">
       <div class="one">
-        <img src="./images/recommend/u270_01.png" alt=""></a>
-        <img src="./images/recommend/u270_03.png" alt=""></a>
-        <img src="./images/recommend/u270_05.png" alt=""></a>
+        <a href=""> <img src="./images/recommend/u270_01.png" alt=""></a>
+        <a href="./sanbu.html"><img src="./images/recommend/u270_03.png" alt=""></a>
+        <a href=""><img src="./images/recommend/u270_05.png" alt=""></a>
       </div>
       <div class="two">
-        <img src="./images/recommend/u270_01.png" alt=""></a>
-        <img src="./images/recommend/u270_03.png" alt=""></a>
-        <img src="./images/recommend/u270_05.png" alt=""></a>
-        <img src="./images/recommend/u270_05.png" alt=""></a>
+        <a href=""><img src="./images/recommend/u274_01.png" alt=""></a>
+        <a href=""><img src="./images/recommend/u274_03.png" alt=""></a>
+        <a href=""><img src="./images/recommend/u274_05.png" alt=""></a>
+        <a href=""><img src="./images/recommend/u274_07.png" alt=""></a>
+        <a href=""><img src="./images/recommend/u274_09.png" alt=""></a>
       </div>
     </div>
   </section>
@@ -45,6 +46,16 @@
     <a href="./user.html"><img src="./images/home/icon__ge_u136.png" alt=""></a>
   </footer>
   <script src="./js/rem.js"></script>
+  <script>
+    document.querySelector('.zhan>div').onclick = function () {
+      document.querySelector('.main ').style.marginLeft = '-10.8rem'
+      document.querySelector('.zhan').style.marginLeft = '-10.8rem'
+    }
+    document.querySelector('.wen>div').onclick = function () {
+      document.querySelector('.main').style.marginLeft = '0'
+      document.querySelector('.zhan').style.marginLeft = '0'
+    }
+  </script>
 </body>
 
 </html>
